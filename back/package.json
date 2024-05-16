@@ -1,0 +1,13 @@
+{
+  "name": "back-hueharbor",
+  "version": "1.0.0",
+  "description": "This is the backend of the app hueHarbor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js"
+  },
+  "author": "Cedrick",
+  "license": "ISC"
+}
