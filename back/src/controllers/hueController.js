@@ -1,3 +1,10 @@
-exports.findAll = (req, res) => {
-    res.json({message: "You're searching for hue, I guess! 🌈🌈"});
+const {fetchCSS} = require("../utils/function")
+
+exports.findAll = async (req, res) => {
+    const url = "https://fluentci.io/"
+
+    const cssFile = await fetchCSS(url);
+
+    console.log(cssFile);
+    res.json("hummmm");
 }
