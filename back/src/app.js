@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.get('/', (req, res) => {
     res.send('Hello world 🚀');
 })
-app.use('/api', apiRoutes);
+app.use('/', apiRoutes);
 
 http.listen(port, () =>
     console.log(`App listening on http://localhost:${port} ! 🚀🚀`)
