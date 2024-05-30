@@ -1,0 +1,90 @@
+.content {
+    z-index: 2;
+}
+
+
+.shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0.7;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.shape:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Existing shapes */
+.shape1 {
+    width: 150px;
+    height: 150px;
+    background: #ff6b6b;
+    border-radius: 50% 50% 0 0;
+}
+
+.shape2 {
+    width: 200px;
+    height: 200px;
+    bottom: 15%;
+    right: 25%;
+    background: #ffca3a;
+    border-radius: 50%;
+}
+
+.shape3 {
+    width: 100px;
+    height: 100px;
+    bottom: 30%;
+    left: 10%;
+    background: #8ac926;
+    border-radius: 0 50% 50% 50%;
+}
+
+/* New shapes */
+.shape4 {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    background: #1982c4;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 10%;
+}
+
+.shape5 {
+    width: 180px;
+    height: 180px;
+    top: 5%;
+    right: 15%;
+    background: #6a4c93;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.shape6 {
+    width: 140px;
+    height: 140px;
+    bottom: 10%;
+    left: 30%;
+    background: #f72585;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 0% 100%);
+}
+
+.shape7 {
+    width: 160px;
+    height: 160px;
+    top: 20%;
+    left: 80%;
+    background: #4cc9f0;
+    clip-path: polygon(20% 0%, 100% 20%, 80% 100%, 0% 80%);
+}

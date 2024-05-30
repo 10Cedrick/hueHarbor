@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url(https://db.onlinewebfonts.com/c/406b56da0c31245c249b3a3c61560d1a?family=Joyride+W05+STD); 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.5;
+  --bg-color : #F5F7FA;
+  --text-color-principale: #2E2E2E;
+  --pop-color: #000080;
+  --second-color : #FF7F50;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color-principale);
+}
+
+.pop-text{
+  color: var(--second-color)
+}
+.cta-btn{
+  background-color: var(--pop-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 2px var(--pop-color), 0 0 2px var(--pop-color), 0 0 2px var(--pop-color), 0 0 2px var(--pop-color);
+}
+
